@@ -27,16 +27,16 @@ jobs:
       with:
         node-version: ${{ matrix.node-version }}
         cache: 'npm'
-        cache-dependency-path: ./augur_dashboard_pepsico/package-lock.json
+        cache-dependency-path: ./auger_dashboard_pepsico/package-lock.json
 
     - name: Install dependencies
-      working-directory: ./augur_dashboard_pepsico
+      working-directory: ./auger_dashboard_pepsico
       run: npm ci
 
     - name: Run Build
-      working-directory: ./augur_dashboard_pepsico
+      working-directory: ./auger_dashboard_pepsico
       run: npm run build --if-present
 
     - name: Run Test
-      working-directory: ./augur_dashboard_pepsico
+      working-directory: ./auger_dashboard_pepsico
       run: npm test
