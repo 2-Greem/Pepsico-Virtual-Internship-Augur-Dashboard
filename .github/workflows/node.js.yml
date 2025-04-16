@@ -27,6 +27,7 @@ jobs:
       with:
         node-version: ${{ matrix.node-version }}
         cache: 'npm'
+        cache-dependency-path: ./augur_dashboard_pepsico/package-lock.json
 
     - name: Install dependencies
       working-directory: ./augur_dashboard_pepsico
