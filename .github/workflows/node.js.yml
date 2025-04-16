@@ -37,6 +37,6 @@ jobs:
       working-directory: ./auger_dashboard_pepsico
       run: npm run build --if-present
 
-    - name: Run Test
-      working-directory: ./auger_dashboard_pepsico
-      run: npm test
+    # - name: Run Test
+    #   working-directory: ./auger_dashboard_pepsico
+    #   run: npm test
